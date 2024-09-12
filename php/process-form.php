@@ -8,9 +8,9 @@ if (isset($_REQUEST['firstname'],$_REQUEST['email'])) {
     $message = $_REQUEST['message'];
       
     // Set your email address where you want to receive emails. 
-    $to = 'youremail@mail.com';
+    $to = 'guadalajarabitcoin@gmail.com';
       
-    $subject = 'Contact Request From Website';
+    $subject = 'Nuevo formulario de contacto en btcgdl.com';
     $headers = "From: ".$firstname." <".$email."> \r\n";
       
     $send_email = mail($to,$subject,$message,$headers);
