@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8" />
+    <title>Escalar los pagos y la custodia de bitcoin a través de LNHANCE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.png">
+
+    <!-- Template CSS Files -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/select2.min.css">
+    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/skins/orange.css">
+
+    <!-- Template JS Files -->
+    <script src="js/modernizr.js"></script>
+
+</head>
+
+<body class="blog">
+    <!-- SVG Preloader Starts -->
+    <div id="preloader">
+        <div id="preloader-content">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="150px" height="150px" viewBox="100 100 400 400" xml:space="preserve">
+                <filter id="dropshadow" height="130%">
+                <feGaussianBlur in="SourceAlpha" stdDeviation="5"/>
+                <feOffset dx="0" dy="0" result="offsetblur"/>
+                <feFlood flood-color="red"/>
+                <feComposite in2="offsetblur" operator="in"/>
+                <feMerge>
+                <feMergeNode/>
+                <feMergeNode in="SourceGraphic"/>
+                </feMerge>
+                </filter>          
+                <path class="path" fill="#000000" d="M446.089,261.45c6.135-41.001-25.084-63.033-67.769-77.735l13.844-55.532l-33.801-8.424l-13.48,54.068
+                    c-8.896-2.217-18.015-4.304-27.091-6.371l13.568-54.429l-33.776-8.424l-13.861,55.521c-7.354-1.676-14.575-3.328-21.587-5.073
+                    l0.034-0.171l-46.617-11.64l-8.993,36.102c0,0,25.08,5.746,24.549,6.105c13.689,3.42,16.159,12.478,15.75,19.658L208.93,357.23
+                    c-1.675,4.158-5.925,10.401-15.494,8.031c0.338,0.485-24.579-6.134-24.579-6.134l-9.631,40.468l36.843,9.188
+                    c8.178,2.051,16.209,4.19,24.098,6.217l-13.978,56.17l33.764,8.424l13.852-55.571c9.235,2.499,18.186,4.813,26.948,6.995
+                    l-13.802,55.309l33.801,8.424l13.994-56.061c57.648,10.902,100.998,6.502,119.237-45.627c14.705-41.979-0.731-66.193-31.06-81.984
+                    C425.008,305.984,441.655,291.455,446.089,261.45z M368.859,369.754c-10.455,41.983-81.128,19.285-104.052,13.589l18.562-74.404
+                    C306.28,314.65,379.774,325.975,368.859,369.754z M379.302,260.846c-9.527,38.187-68.358,18.781-87.442,14.023l16.828-67.489
+                    C327.767,212.14,389.234,221.02,379.302,260.846z"/>       
+            </svg>
+        </div>
+    </div>
+    <!-- SVG Preloader Ends -->
+    <!-- Wrapper Starts -->
+    <div class="wrapper">
+         <!-- Header Starts -->
+		 <header class="header">
+            <div class="container">
+                <div class="row">
+                    <!-- Logo Starts -->
+                    <div class="main-logo col-xs-12 col-md-3 col-md-2 col-lg-2 hidden-xs">
+                        <a href="index.html">
+							<img class="img-responsive" src="images/logo.png" alt="logo">
+						</a>
+                    </div>
+                    <!-- Logo Ends -->
+                    <!-- Statistics Starts -->
+                    <div class="col-md-7 col-lg-7">
+                        <ul class="unstyled bitcoin-stats text-center">
+                            <li>
+                                <h6>Grupo exclusivo de Bitcoin ⚡ No hablamos de otras monedas 🚫</h6>
+							</li>
+                        </ul>
+                    </div>
+                    <!-- Statistics Ends -->
+                    <!-- User Sign In/Sign Up Starts -->
+                    <div class="col-md-3 col-lg-3">
+                        <ul class="unstyled bitcoin-stats text-center">
+                            <li>
+                                <div class="btcwdgt-price" data-bw-theme="light" data-bw-cur="usd"></div>
+                                <span>Live Bitcoin price</span>
+							</li>
+                        </ul>
+                    </div>
+                    <!-- User Sign In/Sign Up Ends -->
+                </div>
+            </div>
+            <!-- Navigation Menu Starts -->
+            <nav class="site-navigation navigation" id="site-navigation">
+                <div class="container">
+                    <div class="site-nav-inner">
+                        <!-- Logo For ONLY Mobile display Starts -->
+                        <a class="logo-mobile" href="index.html">
+							<img class="img-responsive" src="images/logo.png" alt="">
+						</a>
+                        <!-- Logo For ONLY Mobile display Ends -->
+                        <!-- Toggle Icon for Mobile Starts -->
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+                        <!-- Toggle Icon for Mobile Ends -->
+                        <div class="collapse navbar-collapse navbar-responsive-collapse">
+                            <!-- Main Menu Starts -->
+                            <ul class="nav navbar-nav">
+                                <li class="active"><a href="index.html">Inicio</a></li>
+                                <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                                <li><a href="blog.html">Blog</a></li>
+                                <li><a href="services.html">Eventos</a></li>
+                                <li><a href="eventos.html">Recursos</a></li>
+                                <li><a href="usa-bitcoin.html">Usa Bitcoin</a></li>
+                                <li><a href="contacto.html">Contacto</a></li>
+                            </ul>
+                            <!-- Main Menu Ends -->
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- Navigation Menu Ends -->
+        </header>
+        <!-- Header Ends -->
+		<!-- Banner Area Starts -->
+		<section class="banner-area">
+			<div class="banner-overlay">
+				<div class="banner-text text-center">
+					<div class="container">
+						<!-- Section Title Starts -->
+						<div class="row text-center">
+							<div class="col-xs-12">
+								<!-- Title Starts -->
+								<h2 class="title-head banner-post-title">Escalar los pagos y la custodia de bitcoin a través de LNHANCE</h2>
+								<!-- Title Ends -->
+								<!-- Meta Starts -->
+								<div class="meta">
+									<span><i class="fa fa-user"></i> <a href="#">Chris Guida</a></span>
+									<span class="date"><i class="fa fa-calendar"></i> Enero 24 2024</span>
+									<!-- <span><i class="fa fa-commenting"></i> <a href="blog-post.html">29 comments</a></span> -->
+									<span><i class="fa fa-tags"></i> Avanzado, Tecnico</span>
+								</div>
+								<!-- Meta Ends -->
+							</div>
+						</div>
+						<!-- Section Title Ends -->
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Banner Area Ends -->
+		<!-- Section Content Starts -->
+        <section class="container blog-page">
+			<div class="row">
+				<div class="content col-xs-12 col-md-8">
+					<!-- Article Starts -->
+					<article>
+						<!-- Figure Starts -->
+						<figure class="blog-figure">
+							<img class="img-responsive" src="images/blog/bitcoin-estafa.jpg" alt="">
+						</figure>
+						<!-- Figure Ends -->
+						<!-- Content Starts -->
+						<p class="content-article"> 
+                            <br>La Red Lightning es, en mi opinión, lo más emocionante que está sucediendo en el espacio de las criptomonedas. Es un nuevo tipo de red de pago que permite transferir bitcoins sin tocar la blockchain. Esto significa que Lightning resuelve de manera eficaz el problema del asentamiento instantáneo en contextos como restaurantes y cafeterías, donde no tiene sentido que un cliente tenga que esperar 10 minutos o más para recibir sus artículos. También reduce drásticamente las tarifas para estos pequeños pero vitales pagos, porque cuanto menor sea su tarifa en cadena para una compra, mayor será la probabilidad de que su transacción no entre en el próximo bloque. Además, el espacio de bloque se está volviendo más escaso desde que los bloques de bitcoin se llenaron en 2015, y las tarifas han llegado a ser de 10 o incluso 50 dólares, a veces, para ser incluidos en el siguiente bloque. Tal entorno de tarifas competitivas obviamente hace que cualquier transacción inferior a aproximadamente 10 veces esta tarifa requerida sea simplemente antieconómica, porque el efectivo y las tarjetas de crédito son más baratas y rápidas, por lo que los comerciantes tienen incentivos para dejar de aceptar bitcoin cuando esto sucede.</br>
+                            <br>Para que bitcoin se convierta en un estándar mundial, los comerciantes deben tener incentivos para aceptarlo. Lightning nos acerca mucho a este ideal, pero desafortunadamente, sin algunos cambios en las reglas de consenso de bitcoin, Lightning no puede habilitar un mundo donde todos tengan completa soberanía sobre sus propias tenencias y pagos, porque si desea usar Lightning sin usar una billetera custodia como Wallet of Satoshi, necesita poder abrir un canal, y esto requiere realizar una transacción en cadena, con todos los problemas mencionados anteriormente. Algunas personas que tienen más capital disponible y habilidad técnica encontrarán bastante fácil correr su propio nodo de Lightning, pero la mayoría de los comerciantes están acostumbrados a sistemas de pago que “simplemente funcionan” y no requieren aprender cómo convertirse en administrador de un servidor, ni están acostumbrados a depositar una cantidad de dinero y hacer un montón de trabajo para asegurar ese dinero contra hackers, para poder aceptar pagos de clientes. </br>
+                            <br>Además de esto, la primera experiencia de un nuevo usuario al usar bitcoin debe ser al menos tan agradable como usar una cuenta bancaria o una aplicación de pagos fiduciarios como transferencias bancarias por SPEI o PayPal. De lo contrario, no hay incentivo para que la gente deje de usar dinero fiduciario y cambie a bitcoin. </br>
+                            <br> Necesitamos una forma de escalar Lightning al próximo billón de usuarios. ¿Cómo podemos lograrlo? </br>
+                            <br> Aquí entra LNHANCE, una propuesta de soft fork para agregar convenios a bitcoin. Aunque hay muchas propuestas similares (incluyendo APO, CTV por sí mismo, CAT, TXHASH, TLUV y más), creo que LNHANCE logra el mejor equilibrio al habilitar nueva expresividad para mejorar masivamente la experiencia de Lightning, siendo lo suficientemente conservador para no habilitar casos de uso no intencionados que podrían ser destructivos para bitcoin.</br>
+                            <br> LNHANCE consta de CTV (CheckTemplateVerify), CSFS (CheckSigFromStack) y INTERNALKEY. CTV por sí mismo ha sido una propuesta de mejora pendiente (BIP) desde 2019, bip119. CSFS e INTERNALKEY son opcodes de alcance limitado y pequeño que extenderán CTV para permitirle emular APO, otro BIP pendiente, bip118. APO es importante porque nos permite activar LN-Symmetry (anteriormente conocido como eltoo), y nos permite hacer que los PTLC sean mucho más eficientes. LN-Symmetry y PTLC son ambas ideas para mejoras en la Red Lightning que han estado rondando durante varios años, ¡y los desarrolladores han estado muy ansiosos por implementarlas!</br>
+                            <br> Una vez que esta actualización esté activa, correr nodos de Lightning será mucho más fácil y seguro para todos. Los PTLC harán que los pagos sean mucho más privados y eficientes. Y CTV habilita “darkpools”, “canales Lightning no interactivos” y muchas otras formas de compartir, sin necesidad de confianza, UTXOs entre muchas partes. Estas nuevas capacidades mejorarán aún más todos los aspectos del uso de bitcoin: incorporación como nuevo usuario, custodia de bitcoin para uno mismo y administración de un nodo Lightning como comerciante.</br>
+                            <br> El único inconveniente potencial que puedo ver es que si incorporamos suficientes usuarios a bitcoin para multiplicar su base de usuarios por 10x, 100x o más, la cultura de descentralización podría verse negativamente impactada (ya que todos los nuevos usuarios no entenderán la importancia de correr sus propios nodos), y la centralización de los mineros también podría empeorar mucho más.</br>
+                            <br> Pero en mi opinión, este intercambio vale la pena porque LNHANCE nos dará las herramientas que necesitamos para resolver ambos problemas.</br>
+                            <br> ¡Por una Red Lightning nueva y mejorada!</br>
+                            </p>
+						<!-- Content Ends -->
+						<!-- Meta Starts -->
+						<div class="meta second-font">
+							<span><i class="fa fa-user"></i> <a href="#">Chris Guida </a></span>
+							<span class="date"><i class="fa fa-calendar"></i> 24 de Enero 2024</span>
+							<!-- <span><i class="fa fa-commenting"></i> <a href="blog-post.html">18 comments</a></span> -->
+							<span><i class="fa fa-tags"></i> Avanzado, Técnico</span>
+						</div>
+						<!-- Meta Ends -->
+					
+					<!-- Article Ends -->
+				</div>
+				<!-- Sidebar Starts -->
+				<!-- <div class="sidebar col-xs-12 col-md-4">
+					 Tags Widget Starts 
+					<div class="widget widget-tags">
+						<h3 class="widget-title">Popular Tags </h3>
+						<ul class="unstyled clearfix">
+							<li><a href="#">currency</a></li>
+							<li><a href="#">crypto</a></li>
+							<li><a href="#">trading</a></li>
+							<li><a href="#">wallet</a></li>
+							<li><a href="#">mining</a></li>
+							<li><a href="#">transaction</a></li>
+							<li><a href="#">financial</a></li>
+							<li><a href="#">security</a></li>
+			            </ul>
+					</div> -->
+					<!-- Tags Widget Ends -->
+				</div>
+				<!-- Sidebar Ends -->
+			</div>
+		</section>
+		<!-- Section Content Ends -->
+        <!-- Call To Action Section Starts -->
+        <section class="call-action-all">
+			<div class="call-action-all-overlay">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12">
+							<!-- Call To Action Text Starts -->
+							<div class="action-text">
+								<h2>Ponte en contacto con nosotros</h2>
+								<p class="lead">¡Iniciemos una conversación!</p>
+							</div>
+							<!-- Call To Action Text Ends -->
+							<!-- Call To Action Button Starts -->
+							<p class="action-btn"><a class="btn btn-primary" href="contacto.html">Contacto</a></p>
+							<!-- Call To Action Button Ends -->
+						</div>
+					</div>
+				</div>
+			</div>
+        </section>
+        <!-- Call To Action Section Ends -->
+<!-- Footer Starts -->
+<footer class="footer">
+    <!-- Footer Top Area Starts -->
+    <div class="top-footer">
+        <div class="container">
+            <div class="row">
+                <!-- Footer Widget Starts -->
+                <div class="col-sm-4 col-md-4">
+                    <h4>BTC Guadalajara</h4>
+                    <div class="menu">
+                        <ul>
+                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                            <li><a href="blog-right-sidebar.html">Blog</a></li>
+                            <li><a href="eventos.html">Eventos</a></li>
+                            <li><a href="usa-bitcoin.html">Usa Bitcoin</a></li>
+                            <li><a href="contacto.html">Contacto</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Footer Widget Ends -->
+
+                <!-- Footer Widget Starts -->
+                <div class="col-sm-4 col-md-4">
+                    <h4>Redes Sociales y Grupos</h4>
+                    <div class="menu">
+                        <ul>
+                            <li><a href="https://instagram.com/btc.gdl" target="_blank">Instagram</a></li>
+                            <li><a href="">Twitter</a></li>
+                            <li><a href="">Telegram</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Footer Widget Ends -->
+
+                <!-- Footer Widget Starts -->
+                <div class="col-sm-4 col-md-4">
+                    <div class="facts-footer">
+                        <div>
+                            <h5>Apóyanos</h5>
+                            <span>QR Code de nuestra lightning wallet</span>
+                            <div style="margin-top: 10px;">
+                                <img src="images/icons/payment/american-express.png" alt="QR Code" style="width: 150px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Footer Widget Ends -->
+            </div>
+        </div>
+    </div>
+    <!-- Footer Top Area Ends -->
+
+    <!-- Footer Bottom Area Starts -->
+    <div class="bottom-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <!-- Copyright Text Starts -->
+                    <p class="text-center">Hecho con ♥️ en Guadalajara, México</p>
+                    <!-- Copyright Text Ends -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Bottom Area Ends -->
+</footer>
+<!-- Footer Ends -->
+		<!-- Back To Top Starts  -->
+        <a href="#" id="back-to-top" class="back-to-top fa fa-arrow-up"></a>
+		<!-- Back To Top Ends  -->
+		
+        <!-- Template JS Files -->
+        <script src="js/jquery-2.2.4.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/select2.min.js"></script>
+        <script src="js/jquery.magnific-popup.min.js"></script>
+        <script src="js/custom.js"></script>
+
+    </div>
+    <!-- Wrapper Ends -->
+</body>
+
+</html>
