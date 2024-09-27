@@ -1,21 +1,32 @@
 <?php
-if (isset($_REQUEST['firstname'],$_REQUEST['email'])) {
-      
-    $firstname = $_REQUEST['firstname'];
-	$lastname = $_REQUEST['lastname'];
-	$lastname = $_REQUEST['subject'];
-    $email = $_REQUEST['email'];
-    $message = $_REQUEST['message'];
-      
-    // Set your email address where you want to receive emails. 
+if (isset($_POST['firstname'], $_POST['email'], $_POST['message'])) {
+
+    $firstname = $_POST['firstname'];
+    $email = $_POST['email'];
+    $message = $_POST['message'];
+
+    // Dirección de correo a donde quieres recibir los emails.
     $to = 'guadalajarabitcoin@gmail.com';
-      
+
+    // Asunto del correo
     $subject = 'Nuevo formulario de contacto en btcgdl.com';
-    $headers = "From: ".$firstname." <".$email."> \r\n";
-      
-    $send_email = mail($to,$subject,$message,$headers);
-      
-    echo ($send_email) ? 'success' : 'error';
-      
+
+    // Encabezados del correo
+    $headers = "From: " . $firstname . " <" . $email . "> \r\n";
+    $headers .= "Reply-To: " . $email . "\r\n";
+    $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
+
+    // Enviar el correo
+    $send_email = mail($to, $subject, $message, $headers);
+
+    // Mostrar un mensaje de éxito o error
+    if ($send_email) {
+        echo 'success';
+    } else {
+        echo 'error';
+    }
+
+} else {
+    echo 'Por favor completa todos los campos.';
 }
 ?>
