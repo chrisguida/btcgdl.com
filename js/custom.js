@@ -26,6 +26,23 @@
 			$("html").toggleClass("overflow-hidden");
 		});
 		
+
+		// JavaScript to highlight the active page in the navigation menu
+	document.addEventListener('DOMContentLoaded', function() {
+    const currentLocation = window.location.pathname;
+    
+    // Get all anchor tags in the navigation
+    const menuItems = document.querySelectorAll('.nav a');
+
+    // Loop through the menu items and check if the href matches the current page
+    menuItems.forEach(item => {
+        if (item.getAttribute('href') === currentLocation.substring(currentLocation.lastIndexOf('/') + 1)) {
+            item.parentElement.classList.add('active');
+        }
+    });
+});
+
+		
 		/* ----------------------------------------------------------- */
 		/*  REMOVE # FROM URL
 		/* ----------------------------------------------------------- */
