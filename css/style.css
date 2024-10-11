@@ -251,7 +251,7 @@ hr {
 
 body, p {
   -webkit-font-smoothing: antialiased !important;
-  color: #999;
+  color: #fff;
   line-height: 28px;
   font-weight: 400;
   font-size: 16px;
