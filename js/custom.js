@@ -26,21 +26,33 @@
 			$("html").toggleClass("overflow-hidden");
 		});
 		
+		/* ----------------------------------------------------------- */
+		/*  HIGHLIGHT BLOG ON ANY UNKNOWN BLOG PAGE
+		/* ----------------------------------------------------------- */
 
 		// JavaScript to highlight the active page in the navigation menu
-	document.addEventListener('DOMContentLoaded', function() {
-    const currentLocation = window.location.pathname;
-    
-    // Get all anchor tags in the navigation
-    const menuItems = document.querySelectorAll('.nav a');
+		// document.addEventListener('DOMContentLoaded', function() {
+    		const currentLocation = window.location.pathname;
+			const known_pages = ['/index.html','/sobre-nosotros.html', '/eventos.html', 
+				'/recursos.html', '/usa-bitcoin.html','/contacto.html'] // add all of them here
+			if( !known_pages.includes(currentLocation) ) { // fix condition so its not english
+				// get the about nav item
+				const blogNav = document.querySelector('#nav-blog')
+				// add active class to it
+				blogNav.parentElement.classList.add('active');
+			}
 
-    // Loop through the menu items and check if the href matches the current page
-    menuItems.forEach(item => {
-        if (item.getAttribute('href') === currentLocation.substring(currentLocation.lastIndexOf('/') + 1)) {
-            item.parentElement.classList.add('active');
-        }
-    });
-});
+    
+    		// Get all anchor tags in the navigation
+    		// const menuItems = document.querySelectorAll('.nav a');
+
+    		// Loop through the menu items and check if the href matches the current page
+			// menuItems.forEach(item => {
+			// 	if (item.getAttribute('href') === currentLocation.substring(currentLocation.lastIndexOf('/') + 1)) {
+			// 		item.parentElement.classList.add('active');
+			// 	}
+			// });
+		// });
 
 		
 		/* ----------------------------------------------------------- */
