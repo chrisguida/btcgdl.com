@@ -4179,6 +4179,19 @@ h4.panel-title a.collapsed:before {
   ul.user li.sign-up a {
     padding: 12px 18px;
   }
+
+  .service-box > div {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+  }
+
+
+  .service-box .btn-primary {
+    margin: 20px;
+  }
+
 }
 
 /* Medium Devices, Desktops */
