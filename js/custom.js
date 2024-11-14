@@ -34,7 +34,7 @@
 		// document.addEventListener('DOMContentLoaded', function() {
     		const currentLocation = window.location.pathname;
 			const known_pages = ['/index.html','/sobre-nosotros.html', '/eventos.html', 
-				'/recursos.html', '/usa-bitcoin.html','/contacto.html'] // add all of them here
+				'/recursos.html', '/usa-bitcoin.html','/contacto.html','/blog.html','/'] // add all of them here
 			if( !known_pages.includes(currentLocation) ) { // fix condition so its not english
 				// get the about nav item
 				const blogNav = document.querySelector('#nav-blog')
