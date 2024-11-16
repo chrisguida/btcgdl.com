@@ -3404,6 +3404,17 @@ section.shop-checkout {
   margin-bottom: 10px;
 }
 
+.post-body .post-title {
+ color: #fff !important;
+}
+
+.video-container{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .latest-post .post-title a {
   color: #fff;
   transition: .1s;
