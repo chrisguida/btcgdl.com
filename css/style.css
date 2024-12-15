@@ -1666,6 +1666,15 @@ ul.nav.nav-tabs li a:hover, ul.nav.nav-tabs li.active a:hover {
   padding: 0;
 }
 
+.place-card .pricing-footer {
+  position: absolute;
+  top: 75%;
+}
+
+.place-card-internal {
+  height: 530px;
+}
+
 .touch .pricing-wrapper {
   -webkit-perspective: 2000px;
   -moz-perspective: 2000px;
