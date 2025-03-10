@@ -2428,7 +2428,6 @@ ul.nav.nav-tabs li a:hover, ul.nav.nav-tabs li.active a:hover {
 }
 
 .team-member .team-member-caption h4 {
-  line-height: 0;
   text-transform: uppercase;
   margin: 35px 0 16px;
   font-weight: 600;
@@ -5217,4 +5216,8 @@ h4.panel-title a.collapsed:before {
   .countdown-amount {
     font-size: 28px;
   }
+}
+
+.fixed-aspect-ratio {
+  aspect-ratio: 4/3;
 }
