@@ -1807,7 +1807,7 @@ ul.nav.nav-tabs li a:hover, ul.nav.nav-tabs li.active a:hover {
 }
 
 .pricing-header h2 {
-  margin-bottom: 3px;
+  margin-bottom: 20px;
   font-weight: 600;
   text-transform: uppercase;
 }
@@ -1954,6 +1954,7 @@ ul.nav.nav-tabs li a:hover, ul.nav.nav-tabs li.active a:hover {
   line-height: 1.8rem;
   color: #e7e7e7;
   letter-spacing: 2px;
+  margin-bottom: 20px;
 }
 
 .pricing-header h2 span {
@@ -5221,3 +5222,5 @@ h4.panel-title a.collapsed:before {
 .fixed-aspect-ratio {
   aspect-ratio: 4/3;
 }
+.card-header {margin-bottom: 20px;}
+.card-image {margin-bottom: 10px;}
