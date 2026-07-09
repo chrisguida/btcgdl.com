@@ -43,6 +43,46 @@
         .article-body p {
             margin: 0 0 18px;
         }
+
+        .author-byline {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            margin: 0 0 32px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+        }
+
+        .author-byline img,
+        .author-bio img {
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: center 22%;
+            flex-shrink: 0;
+        }
+
+        .author-byline img { width: 54px; height: 54px; }
+
+        .author-byline .byline-name { color: #fff; font-weight: 700; }
+
+        .author-byline .byline-date { display: block; color: #aaa; font-size: 14px; margin-top: 2px; }
+
+        .author-bio {
+            display: flex;
+            gap: 22px;
+            align-items: flex-start;
+            margin: 48px 0 0;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.12);
+        }
+
+        .author-bio img { width: 96px; height: 96px; }
+
+        .author-bio > div h4 { margin-top: 0 !important; }
+
+        @media (max-width: 480px) {
+            .author-bio { flex-direction: column; }
+        }
     </style>
 
 </head>
@@ -173,14 +213,16 @@
 				<div class="content col-xs-12 col-md-8 col-md-offset-2">
 					<!-- Article Starts -->
 					<article>
-						<!-- Figure Starts -->
-						<figure class="blog-figure">
-							<img class="img-responsive" src="images/blog/headshot.png" alt="Laura Meza" style="max-width: 320px; width: 100%; margin: 0 auto;">
-						</figure>
-						<!-- Figure Ends -->
+						<!-- Hero image (topical) pending from Carlos -->
 						<!-- Content Starts -->
 						<div class="content-article article-body">
 							<h3>From a café in Mexico to a Career at PlebLab</h3>
+							<!-- Author Byline Starts -->
+							<div class="author-byline">
+								<img src="images/blog/headshot.jpg" alt="Laura Meza">
+								<span><span class="byline-name">Laura Meza</span><span class="byline-date">6 July 2026</span></span>
+							</div>
+							<!-- Author Byline Ends -->
 							<h4>The Afternoon That Started It All</h4>
 							<p>Some afternoons feel ordinary until you look back and realize they weren’t.</p>
 							<p>I was sitting on a friend’s patio reading while he worked nearby. At some point, I paused and started listening to an interview about innovation and society. The sound caught his attention.</p>
@@ -232,9 +274,16 @@
 							<h4>For Anyone Who Thinks They Don’t Belong</h4>
 							<p>If you’re reading this and thinking: “I’m not technical. This isn’t for me.” You’re wrong.</p>
 							<p>Bitcoin grows because people with different skills show up and contribute. You don’t need permission. You don’t need to have everything figured out. You just need to start.</p>
-							<h4>Author Bio</h4>
+							<!-- Author Bio Starts -->
+							<div class="author-bio">
+								<img src="images/blog/headshot.jpg" alt="Laura Meza">
+								<div>
+									<h4>Author Bio</h4>
 							<p>Laura Meza leads partnerships at PlebLab, a Bitcoin hackerspace and startup hub based in Austin. After discovering Bitcoin through the local community in Guadalajara, she found her place helping connect builders, founders, and organizations across the ecosystem. She is passionate about making Bitcoin feel more accessible to people from all backgrounds.</p>
 							<p>LinkedIn: <a href="https://www.linkedin.com/in/laura-meza-mx/" target="_blank">https://www.linkedin.com/in/laura-meza-mx/</a></p>
+								</div>
+							</div>
+							<!-- Author Bio Ends -->
 						</div>
 						<!-- Content Ends -->
 						<!-- Meta Starts -->
